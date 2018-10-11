@@ -35,3 +35,9 @@ script:
 after_script:
   - mv overalls.coverprofile coverage.txt
   - bash <(curl -s https://codecov.io/bash)
+
+branches:
+  only:
+    - master
+    - develop
+    - /release-.*/
